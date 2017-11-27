@@ -1,0 +1,95 @@
+.wapper_form-enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.text_box-information h1 {
+    font-size: 35px;
+    padding-bottom: 25px;
+    font-family: "Leckerli One", Arial, Tahoma, sans-serif;
+}
+
+.text_box-information h2 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.text_box-information {
+    padding-bottom: 20px;
+}
+
+.form_input-user input {
+    padding: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+label.control-label_login, label.control-label_senha {
+    position: absolute;
+    padding: 20px;
+    z-index: 99999;
+    font-size: 15px;
+}
+
+
+input.btn.bnt-enter, input.btn.bnt-cadastre {
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+
+input.btn.bnt-cadastre {
+    background: #fff;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #d82482;
+    color: #d82482;
+    transition: background-color 610ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+input.btn.bnt-enter {
+	background-color: #ffd700;
+	border-radius: 0.125rem;
+	border-color: transparent;
+	color: #000;
+	transition: color 210ms ease;
+	cursor: pointer;
+	transition: box-shadow 610ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+input.btn.bnt-enter:hover {
+    box-shadow: 0px 13px 19px -6px rgba(34,34,34,0.41);
+    transition: box-shadow 610ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+}
+
+input.btn.bnt-cadastre:hover {
+    background-color: #d82482;
+    color: #ffffff;
+    border: 1px solid #fff;
+    transition: background-color 610ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+}
+
+.cadastre_inform  span {
+    font-size: 13px;
+    padding-bottom: 5px;
+    text-align: left;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+	input.btn.bnt-enter, input.btn.bnt-cadastre {
+        height: 60px;
+	}
+	.text_box-information h1 {
+    font-size: 45px;
+	}
+}

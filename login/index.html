@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title> BeCare Now - Specialized in baby care </title>
+    	<meta name="description" content="Agência especializada em serviços de Babá">
+    	<meta name="keywords" content="agencia de baba, baba, sites">
+    	<meta name="robots" content="index, follow">
+      <link rel="stylesheet" href="../css/style.css">    	
+      <link rel="stylesheet" href="../css/login.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    	<link rel="icon" href="../img/baby-logo3.png">
+    </head>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+    </style>
+    <body>
+        <!-- CABEÇALHO --> 
+        <header class="cabecalho container" style="background: #fff">
+          <a href="index.html"><h1 class="logo"></h1></a>
+           <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+           <nav class="menu">
+               <a class="btn-close"><i class="fa fa-times"></i></a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html#servicos">Serviços</a></li>
+                  <li><a href="../index.html#somos">Quem somos</a></li>
+                  <li><a href="../index.html#faleconosco">Contato</a></li>
+               </ul>
+           </nav> 
+            <div class="menu-mask"></div>  
+        </header>
+
+  <div class="container">
+    <div class="wapper_form-enter">
+      <div class="">
+        <div class="text_box-information">
+          <h1 class="amarelo">Acesse sua conta</h1>
+          <h2>Acesse agora sua conta e visualize a babá que você procura.</h2>
+        </div>
+        <form class="simple_form form-horizontal" autocomplete="false" novalidate="novalidate" id="new_user" action="/login" accept-charset="UTF-8" method="post">
+          <div class="form-group string optional user_login">
+              <div class="form_input-user">  
+                <label class="control-label_login " for="user_login"></label>
+                <input class="form-control_login"  placeholder="Login" type="text" value="" id="user_login">
+              </div>
+          </div>
+          <div class="form-group password optional user_password">
+            <div class="form_input-user">
+              <label class="control-label_senha" for="user_password"></label>
+            
+              <input class="form-control_senha"  placeholder="Senha" type="password" id="user_password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <input type="submit" name="commit" value="Entrar" class="btn bnt-enter  azulbg">
+            </div>
+          </div>
+        </form>
+        <div class="cadastre_inform">
+          <span>Ainda não tem cadastro? Crie seu usuário</span> 
+          <div>
+              <input type="submit" name="commit" value="Cadastre-se agora" class="btn bnt-cadastre "  onclick="window.location.href='/babysiter/cadastro'">
+          </div>
+        </div>  
+      </div>
+    </div>
+</div>
+
+        <footer>
+          <div class=""> 
+            <div class="box-footer">
+              <a class="up" href="#"><img alt="up-logo" src="../img/up-chevron.svg"></a>
+              <nav class="menu-list">
+                <div class="box-incons">
+                  <a href="#"><img alt="facebook-logo" src="../img/facebook-logo-button.svg"></a>
+                  <a href="#"><img alt="twitter-logo" src="../img/twitter-logo-button.svg"></a>
+                  <a href="#"><img alt="google-plus-logo" src="../img/google-plus-logo-button2.svg"></a> 
+                    <a href="#"><img alt="instagram-logo" src="../img/instagram-logo.svg"></a>
+                  <a href="#"><img alt="whatsapp-logo" src="../img/whatsapp.svg"></a>
+                </div>  
+                <ul class="list a">
+                  <li><a href="#servicos">Serviços</a></li>
+                  <li><a href="#somos">Quem Somos</a></li>
+                  <li><a href="#faleconosco">Contatos</a></li>
+                </ul>
+              </nav>  
+               
+            </div>
+              <div class="box-footer rosa3">
+              <div class="copy">  
+              
+                <span>&copy; 2017  -  Copyright -  BeCare Now WebSite</span>
+                
+               </div>
+            </div>
+        </footer>
+        
+        <!-- JQUERY --> 
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+        $(".btn-menu").click(function(){
+          $(".menu-mask").show();
+          $( ".menu" ).animate( {
+            width: "toggle",
+            }, "linear", function() {
+            $(".menu").show();
+          });
+        });        
+        $(".btn-close").click(function(){
+          $(".menu").animate( { 
+            width: "toggle",
+          }, 
+          "linear", function () {
+            $(".menu").hide();
+            $(".menu-mask").hide();
+          }); 
+        });
+
+        $(".menu-mask").click(function(){
+          $(".menu").animate( {
+            width: "toggle",
+          },"linear",function (){ 
+           $(".menu").hide();
+           $(".menu-mask").hide();
+        })
+           
+        });
+        </script>      
+    </body>
+</html>

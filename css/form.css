@@ -1,0 +1,219 @@
+.form-group {
+    padding: 10px 0px;
+}
+
+label {
+    color: #222;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.col-sm-8 input {
+	border: 1px solid rgba(212, 212, 212, 0.61);
+    padding: 15px;
+    width: 100%;
+}
+
+legend {
+	 font-family: "Leckerli One", Arial, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+label.radio_buttons_label {
+    padding-right: 5%;
+}
+
+label.radio_buttons_label input {
+    margin-right: 10px;
+}
+
+.form-group.radio_buttons {
+    height: 50px;
+    padding: 10px 0px;
+}
+
+.form-group.select.optional.family_jobs_period_id {
+    height: 50px;
+}
+.btn-default {
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 0;
+
+}
+
+input.btn.btn-primary.rosabg {
+    background: #009fda;
+}
+
+input.btn.btn-primary.azulbg {
+    background: #f35a81;
+}
+div#file-text {
+	overflow: hidden;
+	box-sizing: border-box;
+    float: right;
+    height: 42px;
+    width: 155px;
+    padding: 11px 5px 11px 5px;
+}
+
+.input-group-btn {
+ 
+}
+
+input[type=file].file {
+  display: none;
+}
+
+label.select.optional.col-sm-4.control-label {
+    margin: 0;
+}
+
+input.btn.btn-primary.azulbg {
+    border-radius: 4px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.title_form h1 {
+	 font-family: "Leckerli One", Arial, Tahoma, sans-serif;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+input.btn.btn-primary.rosabg {
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.checkbox-wapper {
+    height: 20px;
+}
+
+input#housemaid_tos {width: 10%;}
+
+label.boolean.optional.checkbox {
+    width: 100%;
+}
+
+p.text-center, p#address {
+    font-weight: 900;
+    color: rgba(6, 6, 6, 0.58);
+}
+
+.input-group.file-chooser {
+    height: 42px;
+}
+
+#housemaid_services_attributes_0_function_id,select#family_jobs_attribut, {
+    height: 40px;
+}
+
+select#family_jobs_attribut, select#family_jobs_attributes_0_period_id {
+    height: 40px;
+    border: 1px solid rgba(212, 212, 212, 0.61);
+    width: 120px;
+    float: left;
+    margin-left: 30px;
+}
+label.select.optional.col-sm-4.control-label {margin-top: 8px;}
+
+textarea#housemaid_description {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    font-weight: bolder;
+}
+select#family_jobs_attribut {
+    margin-left: 100px;
+}
+
+/* tablet*/
+@media screen and (min-width: 768px) {
+
+
+.title_form h1 {
+    font-size: 40px;
+}
+
+legend {
+	font-size: 30px;
+}
+div#file-text {
+    width: 80%;
+
+	}
+
+#housemaid_services_attributes_0_function_id {
+	    float: left;
+	    margin-left: 18px;
+	    height: 40px;
+	    border: 1px solid rgba(212, 212, 212, 0.61);
+	}
+
+.form-group.select.optional.housemaid_services_function_id {
+	    height: 60px;
+	}
+
+textarea#housemaid_description {
+	    width: 100%;
+	    padding: 10px;
+	    height: 150px;
+	    border: 1px solid rgba(212, 212, 212, 0.61);
+	}
+
+input#housemaid_tos {
+	    width: 4%;
+	}
+
+div#file-text {
+	border: 1px solid rgba(212, 212, 212, 0.61);
+    text-align: left;
+    background: #fff;
+}
+
+label.radio_buttons_label {
+	width: 15%;
+    padding: 0;
+    margin-right: 5px;
+}
+
+label.radio_buttons_l {
+    padding: 0;
+    margin-right: 10px;
+}
+
+label.radio_buttons_label input {
+	      float: left;
+	    margin-top: 4px;
+	    width: 20%;
+	}
+
+input.btn.btn-primary.rosabg {
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    width: 35%;
+    text-align: center;
+}
+
+input.btn.btn-primary.azulbg {
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    width: 35%;
+    text-align: center;
+}
+label.radio_buttons_label.gender {
+		padding: 0px;
+    width: 35px;
+}
+
+}
