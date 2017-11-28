@@ -339,6 +339,14 @@ strong {
 .text-intens.altura a:hover {
 	border: none;
 }
+
+.wrapper_articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 999999;
+}
 /* NEWSLETTER */
 
 .newsletter h2 {
