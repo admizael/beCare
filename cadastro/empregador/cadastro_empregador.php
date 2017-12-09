@@ -1,29 +1,39 @@
 <?php
-	//conectar com o servidor
-	$conectar=@mysql_connect('localhost','root','') or die ("erro");
-	//verificamos la conexion
-	if(!$conectar){
-		echo"No pode-se conectar com o servidor";
+	//conectamos com o servidor
+	$conexao=mysqli_connect('localhost','root','');
+	//verificamos a conexao
+	if(!$conexao){
+		echo"Não foi possivel se conectar com o servidor";
 	}else{
 
-		$base=mysql_select_db('teste');
-		if(!$base){
-			echo"No foi encontrado a base de dados";			
+		$banco=mysqli_select_db( $conexao,'teste');
+		if(!$banco){
+			echo"Não foi encontrada a base de dados";			
 		}
 	}
-	//recupera as variaves
-	$name=$_POST['name'];
+	// Charset para utilizar acentuação
+	mysqli_set_charset($conexao,'utf8');
+
+	//recuperar as variaveis
+	$nome=$_POST['nome'];
 	$email=$_POST['email'];
-	$senha=$_POST['password'];
-	$cpf=$_POST['cpf'];
-	//fazendo a sequencia sql
-	$sql="INSERT INTO cadastro_empregador VALUES('$name','$email','$senha','$cpf')";
-	//executando a sequencia 
-	$ejecutar=mysql_query($sql);
-	//verificamos la ejecucion
-	if(!$ejecutar){
-		echo"Hubo Algun Error";
+	$mensagem=$_POST['mensagem'];
+	//fazendo a sentença sql
+	/*$sql="INSERT INTO cadastro_empregador(nome,email,mensagem) VALUES('$nombre',
+								   '$correo',
+								   '$mensaje')";*/
+	//executamos la sentencia de sql
+	
+	//$ejecutar=mysqli_query($conectar,$sql); // também posso usar o insert into direto dentro da função mysql_qquery
+	
+	$executar=mysqli_query($conexao, "INSERT INTO cadastro_empregador(nome,email,mensagem) VALUES('$nome',
+								   '$email',
+								   '$mensagem')");
+
+	//verificamos se está executando
+	if(!$executar){
+		echo"Ocorreu algum erro";
 	}else{
-		echo"Datos Guardados Correctamente<br><a href='index.html'>Volver</a>";
+		echo"Datos Guardados Corretamente<br><a href='index.html'>Voltar</a>";
 	}
 ?>
