@@ -1,0 +1,57 @@
+
+
+
+
+beCare/cadastro/empregador/index.html
+
+Dados de Acesso
+Nome Completo
+celular/whatsapp
+E-mail
+Senha
+CPF
+cep*
+endereço*
+número*
+complemento
+bairro*
+
+
+Depois de enviar o formulário mostrar a tela de login e mostrar mensagem de usuário cadastrado com sucesso
+
+
+becare/cadastro/baba/index.html
+
+DADOS DE ACESSO
+
+Nome* 
+E-mail*
+Senha*
+CPF*
+RG*
+Data de Nascimento*
+celular/whatsapp*
+cep*
+endereço*
+número*
+complemento
+bairro*
+estado(usar aquela paradinha pra escolher opção do estado na lista que eu não lembro o nome)
+cidade(aqui também)
+filhos (também)
+estado civil (também)
+
+Informações Profissionais
+
+Horas disponíveis no dia( usar checklist aqui)
+Faixa etaria da criança(checklist)
+Sua escolaridade(paradinha de escolher opção)
+Experiencia(escolher opção)
+Disponibilidade(escolher opção)
+Outras caracteristicas (caixa de texto)
+Resumo do histórico prossional( caixa de texto)
+
+
+Depois de enviar o formulário mostrar a mensagem de usuário cadastrado e ir pra tela de login
+
+AS IMAGENS EXEMPLOES ESTÃO NA PASTA IMAGENS
