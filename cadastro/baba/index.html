@@ -67,29 +67,9 @@
                                 <input activate="password" placeholder="Crie sua senha" class="password optional form-control" type="password" name="housemaid[password]" id="housemaid_password">
                             </div>
                         </div>
-                        <div class="form-group string optional housemaid_cpf">
-                            <label class="string optional col-sm-4 control-label" for="housemaid_cpf">CPF</label>
-                            <div class="col-sm-8">
-                                <input activate="cpf" class="string optional cpf form-control" placeholder="Digite apenas números" type="text" name="housemaid[cpf]" id="housemaid_cpf">
-                            </div>
-                        </div>
+
                         <legend class="rosa">Dados pessoais</legend>
-                        <div class="form-group radio_buttons ">
-                            <label class="radio_buttons_label gender">Sexo</label>
-                            <div class="col-sm-8">
-	                            <span class="radio">
-		                            <label class="radio_buttons_label" for="radio_buttons_label">
-		                            	<input class="radio_buttons" type="radio" value="1" name="housemaid[details][gender]" id="details_gender_1">Feminino
-		                            </label>
-	                            </span>
-	                            <span class="radio">
-		                            <label class="radio_buttons_label" for="radio_buttons_label">
-		                            	<input class="radio_buttons" type="radio" value="2" name="housemaid[details][gender]" id="details_gender_2">
-		                            	Masculino
-		                            </label>
-	                            </span>
-                            </div>
-                        </div>
+
                         <div class="form-group string optional housemaid_birthdate">
                             <label class="string optional col-sm-4 control-label" for="housemaid_birthdate">Nascimento</label>
                             <div class="col-sm-8">
@@ -97,7 +77,21 @@
                             </div>
                         </div>
 
-                          <p class="address-wrapper text-center"><span></span><i class="glyphicon glyphicon-map-marker"></i><p data-address="address" id="address">Preencha o CEP e o número de sua residência!</p></p>
+                         <div class="form-group string optional housemaid_cpf">
+                            <label class="string optional col-sm-4 control-label" for="housemaid_cpf">CPF</label>
+                            <div class="col-sm-8">
+                                <input activate="cpf" class="string optional cpf form-control" placeholder="Digite apenas números" type="text" name="housemaid[cpf]" id="housemaid_cpf">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group string optional housemaid_localization_adress">
+                            <label class="string optional col-sm-4 control-label" for="adress">Endereço</label>
+                            <div class="col-sm-8">
+                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas endereço " type="text" value="" name="adress" id="adress">
+                            </div>
+                        </div>  
+
                         <div class="form-group string optional housemaid_localization_zipcode">
                             <label class="string optional col-sm-4 control-label" for="housemaid_localization_attributes_zipcode">CEP</label>
                             <div class="col-sm-8">
@@ -109,59 +103,192 @@
                             <div class="col-sm-8">
                                 <input activate="number" data-address="number" placeholder="Ex: 148" class="string optional form-control" type="text" value="" name="housemaid[localization_attributes][number]" id="housemaid_localization_attributes_number">
                             </div>
-                        </div>
-                        
-                        <div class="form-group ">
-                            <div class="checkbox-wapper">
-                                <div class="checkbox inline">
-                                    <input value="0" type="hidden" name="housemaid[phones_attributes][0][show]">
-                                    <label class="checkbox">
-                                        <input class="boolean optional" type="checkbox" value="1" checked="checked" name="housemaid[phones_attributes][0][show]" id="housemaid_phones_attributes_0_show"> Exibir no anúncio</label>
-                                </div>
+                        </div>                      
+
+                        <div class="form-group string optional housemaid_localization_neighbor">
+                            <label class="string optional col-sm-4 control-label" for="neighbor">bairro</label>
+                            <div class="col-sm-8">
+                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas o bairro" type="text" value="" name="neighbor" id="neighbor">
+                            </div>
+                        </div>                        
+
+                        <div class="form-group string optional housemaid_localization_uf">
+                            <label class="string optional col-sm-4 control-label" for="uf">UF</label>
+                            <div class="col-sm-8">
+                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas sua UF" type="text" value="" name="uf" id="uf">
                             </div>
                         </div>
+
+
                         <div class="form-group string optional housemaid_phones_number">
-                            <label class="string optional col-sm-4 control-label" for="housemaid_phones_attributes_1_number">Celular</label>
+                            <label class="string optional col-sm-4 control-label" for="phones_number">Celular</label>
                             <div class="col-sm-8">
-                                <input activate="mobile" placeholder="DDD + Telefone" class="string optional phone-group phone-mobile form-control" maxlength="15" value="" size="15" type="text" name="housemaid[phones_attributes][1][number]" id="housemaid_phones_attributes_1_number">
+                                <input activate="mobile" placeholder="DDD + Telefone" class="string optional phone-group phone-mobile form-control" maxlength="15" value="" size="15" type="text" name="number" id="phones_number">
                             </div>
                         </div>
-                        <div class="form-group boolean optional housemaid_phones_show">
-                            <div class="checkbox-wapper">
-                                <div class="checkbox inline">
-                                    <input value="0" type="hidden" name="housemaid[phones_attributes][1][show]">
-                                    <label class="checkbox">
-                                        <input class="boolean optional" type="checkbox" value="1" checked="checked" name="housemaid[phones_attributes][1][show]" id="housemaid_phones_attributes_1_show"> Exibir no anúncio</label>
-                                </div>
-                            </div>
-                        </div>
-                <!--    <legend class="rosa">Foto</legend>
-                        <p class="text-center">Você pode incluir sua foto no currículo</p>
-                        <div class="form-group">
-                            <div class="col-sm-4"><img class="img-circle h-trans avatar housemaid"  alt=""></div>
+
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label gender">Sexo</label>
                             <div class="col-sm-8">
-                                <div class="input-group file-chooser">
-                                    <div class="input-group-btn">
-                                        <label for="file-avatar" class="btn-default btn-file azulbg">Escolher foto
-                                        </label>
-                                            <input class="file" data-update="#file-avatar"  id="file-avatar" type="file" name="housemaid[avatar]" id="housemaid_avatar">
-                                    </div>
-                                    <div class="input form-control" id="file-text" type="text"></div>
-                                </div>
+                                <span class="radio">
+                                    <label class="radio_buttons_label" for="radio_buttons_label">
+                                        <input class="radio_buttons" type="radio" value="1" name="housemaid[details][gender]" id="details_gender_1">Feminino
+                                    </label>
+                                </span>
+                                <span class="radio">
+                                    <label class="radio_buttons_label" for="radio_buttons_label">
+                                        <input class="radio_buttons" type="radio" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Masculino
+                                    </label>
+                                </span>
                             </div>
-                        </div> 
-                        <legend class="rosa">Que serviços você oferece?</legend>
-                        <p class="text-center">Escolha</p>
-                        <div class="form-group select optional housemaid_services_function_id">
-                            <label class="select optional col-sm-4 control-label" for="housemaid_services_attributes_0_function_id">Serviço 1</label>
+                        </div>                        
+
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label civil_state">Estado Civil</label>
                             <div class="col-sm-8">
-                                <select class="select optional form-control" name="housemaid[services_attributes][0][function_id]" id="housemaid_services_attributes_0_function_id">
-                                    <option value="">Selecione o serviço 1</option>
-                                    <option value="2">Babá</option>
-                                    <option value="3">Babá Folguista</option>
+                                <select>
+                                  <option value=" "></option>
+                                  <option value="solteira(o)">Solteira (o)</option>
+                                  <option value="casada(o)">Casada (o)</option>
                                 </select>
                             </div>
-                        </div>         -->
+                        </div>
+                        
+                        <legend class="rosa">Informações Profissionais</legend>
+
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label gender">Horas Disponíveis no dia</label>
+                            <div class="col-sm-8">
+                                <span class="radio">
+                                    <label class="radio_buttons_label" for="radio_buttons_label">
+                                        <input class="radio_buttons" type="checkbox" value="1" name="housemaid[details][gender]" id="details_gender_1">Folguista/Por hora
+                                    </label>
+                                </span>
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Meio período manhã
+                                    </label>
+                                </span>                 
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Meio período manhã
+                                    </label>
+                                </span>                   
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Meio período tarde
+                                    </label>
+                                </span>                
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Mensalista Diurno
+                                    </label>
+                                </span>
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Mensalista noturno
+                                    </label>
+                                </span>
+                            </div>
+                        </div>                         
+
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label gender">Faixa etária da criança</label>
+                            <div class="col-sm-8">
+                                <span class="radio">
+                                    <label class="radio_buttons_label" for="radio_buttons_label">
+                                        <input class="radio_buttons" type="checkbox" value="1" name="housemaid[details][gender]" id="details_gender_1">Recém Nascido
+                                    </label>
+                                </span>
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        0 a 2 anos
+                                    </label>
+                                </span>                 
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        2 a 5 anos 
+                                    </label>
+                                </span>                   
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                       5 a 10 anos
+                                    </label>
+                                </span>                
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                       mais de 10 anos 
+                                    </label>
+                                </span>
+
+                                <span class="checkbox">
+                                    <label class="checkbox_buttons_label" for="checkbox_buttons_label">
+                                        <input class="checkbox_buttons" type="checkbox" value="2" name="housemaid[details][gender]" id="details_gender_2">
+                                        Mensalista noturno
+                                    </label>
+                                </span>
+                            </div>
+                        </div>  
+
+                                            
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label civil_state">Sua Escolariadade</label>
+                            <div class="col-sm-8">
+                                <select>
+                                  <option value=" "></option>
+                                  <option value="Superior">Superior</option>
+                                  <option value="Tecnico">Curso Tecnico</option>
+                                  <option value="Medio">Ensino Médio</option>
+                                  <option value="Fundamental">Ensino Fundamental</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label civil_state">Experiência</label>
+                            <div class="col-sm-8">
+                                <select>
+                                  <option value=" "></option>
+                                  <option value=" ">sem experiencia</option>
+                                  <option value="0 a 1">0 a 1 ano</option>
+                                  <option value="1 a 2">1 a 2 anos</option> 
+                                  <option value="2 a 5">2 a 5 anos</option>
+                                  <option value="5 a 10">5 a 10 anos</option>
+                                  <option value="mais de 10">mais de 10 anos</option>
+                                </select>
+                            </div>
+                        </div>              
+
+                        <div class="form-group radio_buttons ">
+                            <label class="radio_buttons_label civil_state">Disponibilidade</label>
+                            <div class="col-sm-8">
+                                <select>
+                                  <option value=" "></option>
+                                  <option value=" ">Estou trabalhando</option>
+                                  <option value="0 a 1">Inicio imediato</option>
+                                </select>
+                            </div>
+                        </div>
+
+
                         <legend class="rosa">Fale sobre sua experiência e motivação</legend>
                         <p class="text-center">Não coloque telefone e e-mail neste campo. Caso contrário seu cadastro será excluído.</p>
                         <div class="form-group text optional housemaid_description">
@@ -249,9 +376,9 @@
     var input = document.getElementById('file-avatar'),
     fileName = document.getElementById('file-text');
 
-	input.addEventListener('change', function(){
-	  fileName.textContent = this.value;
-	});
+    input.addEventListener('change', function(){
+      fileName.textContent = this.value;
+    });
     </script>
 </body>
 
