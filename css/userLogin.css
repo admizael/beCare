@@ -1,0 +1,82 @@
+
+.box-user-login {
+    padding-top: 15px;
+    width: 100%;
+}
+.box-user-login h2 {
+    font-size: 35px;
+    font-family: "Leckerli One", Arial, Tahoma, sans-serif;
+}
+
+.box-data-items h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.box-data-items {
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.box-data-items-text {
+    padding-bottom: 5px;
+}
+
+.box-user-items {
+    color: #130400;
+    padding: 25px;
+	border-radius:  5px;
+	border: 1px solid #00000030;
+	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 25px;
+}
+.box-user-items h3 {
+    color: #f35a81;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.box-user-item__information {
+    display:  flex;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+
+.box-user-item__information img {
+    border-radius: 100px;
+    min-height: 80px;
+    width: 90px;
+}
+.box-user-item__text {
+    padding-left: 30px;
+}
+
+.box-user-item__description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box-user-item__description-text {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.box-user-item__buttom {
+    border: 1px solid #f35a81;
+    padding: 10px 30px;
+    color: #ffedf1;
+}
+
+.box-user-item__buttom:hover {
+    background: transparent;
+    color: #f35a81;
+}
+
+@media screen and (min-width: 768px) {
+	.box-user-login {
+     padding-top: 40px;
+     width: 50%;
+     float: left;
+	 }
+ }

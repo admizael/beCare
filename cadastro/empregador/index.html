@@ -41,119 +41,93 @@
             </div>
         </div>
         <div class="row">
-            <div>
-                <div class="well bs-component wizard-1">
-                    <form class="simple_form form-horizontal" autocomplete="false" novalidate="novalidate" id="new_housemaid" enctype="multipart/form-data" " accept-charset="UTF-8" method="post">
-                        <input name="utf8" type="hidden" value="✓">
-                        <input type="hidden" name="authenticity_token">
-                        <legend class="azul">Dados de acesso</legend>
-
-
-                        <div class="form-group string optional">
-                            <label class="string optional" for="name">Nome</label>
-                            <div class="col-sm-8">
-                                <input class="string optional " placeholder="Ex: Gabriel Soares" autofocus="autofocus" type="text" name="name" id="name">
-                            </div>
-                        </div>
-                        <div class="form-group email optional email">
-                            <label class="password optional col-sm-4 control-label" for="email">Email</label>
-                            <div class="col-sm-8">
-                                <input class="string optional " placeholder="Ex: exemploemail@gmail.com" type="email" name="email" id="email">
-                            </div>
-
-                        </div>
-                        <div class="form-group password optional housemaid_password">
-                            <label class="password optional col-sm-4 control-label" for="password">Senha</label>
-                            <div class="col-sm-8">
-                                <input activate="password" placeholder="Crie sua senha" class="password optional form-control" type="password" name="password" id="password">
-                            </div>
-                        </div> 
-                        <div class="form-group string optional housemaid_cpf">
-                            <label class="string optional col-sm-4 control-label" for="cpf">CPF</label>
-                            <div class="col-sm-8">
-                                <input activate="cpf" class="string optional cpf form-control" placeholder="Digite apenas números" type="text" name="cpf" id="cpf">
-                            </div> 
-                        </div>
-                        <legend class="azul">Dados pessoais</legend>
-
-                          <p class="address-wrapper text-center"><span></span><i class="glyphicon glyphicon-map-marker"></i><p data-address="address" id="address">Preencha o CEP e o número de sua residência!</p></p>
-
-                        <div class="form-group string optional housemaid_localization_zipcode">
-                            <label class="string optional col-sm-4 control-label" for="zipcode">CEP</label>
-                            <div class="col-sm-8">
-                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas números" type="text" value="" name="zipcode" id="zipcode">
-                            </div>
-                        </div>                        
-
-                        <div class="form-group string optional housemaid_localization_adress">
-                            <label class="string optional col-sm-4 control-label" for="adress">Endereço</label>
-                            <div class="col-sm-8">
-                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas endereço " type="text" value="" name="adress" id="adress">
-                            </div>
-                        </div>                        
-
-                        <div class="form-group string optional housemaid_localization_neighbor">
-                            <label class="string optional col-sm-4 control-label" for="neighbor">bairro</label>
-                            <div class="col-sm-8">
-                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas o bairro" type="text" value="" name="neighbor" id="neighbor">
-                            </div>
-                        </div>                        
-
-                        <div class="form-group string optional housemaid_localization_uf">
-                            <label class="string optional col-sm-4 control-label" for="uf">UF</label>
-                            <div class="col-sm-8">
-                                <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas sua UF" type="text" value="" name="uf" id="uf">
-                            </div>
-                        </div>
-
-                        <div class="form-group string">
-                            <label class="string optional col-sm-4 control-label" for="number">Número</label>
-                            <div class="col-sm-8">
-                                <input activate="number" data-address="number" placeholder="Ex: 148" class="string optional form-control" type="text" value="" name="number" id="housemaid_localization_attributes_number">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group string optional housemaid_phones_number">
-                            <label class="string optional col-sm-4 control-label" for="phones_number">Celular</label>
-                            <div class="col-sm-8">
-                                <input activate="mobile" placeholder="DDD + Telefone" class="string optional phone-group phone-mobile form-control" maxlength="15" value="" size="15" type="text" name="number" id="phones_number">
-                            </div>
-                        </div>
-
-<!--                         <legend class="azul">Foto</legend>
-                        <p class="text-center">Você pode incluir sua foto no currículo</p>
-                        <div class="form-group">
-                            <div class="col-sm-4"><img class="img-circle h-trans avatar housemaid"  alt=""></div>
-                            <div class="col-sm-8">
-                                <div class="input-group file-chooser">
-                                    <div class="input-group-btn">
-                                        <label for="file-avatar" class="btn-default btn-file rosabg ">Escolher foto
-                                        </label>
-                                            <input class="file" data-update="#file-avatar"  id="file-avatar" type="file" name="housemaid[avatar]" id="housemaid_avatar">
-                                    </div>
-                                    <div class="input form-control" id="file-text" type="text"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        
-                    
-                        <div class="form-group boolean optional housemaid_tos">
-                            <div class="col-sm-offset-4 col-sm-8">
-                                <div class="checkbox inline">
-                                    <input value="0" type="hidden" name="terms">
-                                    <label class="boolean optional checkbox" for="housemaid_tos">
-                                        <input class="boolean optional" type="checkbox" value="1" checked="checked" name="terms" id="housemaid_tos">Li e concordo com os Termos de Uso</label>
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="form-group">
-                            <div class="class col-sm-offset-4 col-sm-8  ">
-                                <input type="submit" name="commit" value="Enviar" class="btn btn-primary azulbg">
-                            </div>
-                        </div>
-                    </form>
+            <form class="simple_form form-horizontal" autocomplete="false" novalidate="novalidate" id="new_housemaid" enctype="multipart/form-data" " accept-charset="UTF-8" method="post">
+                <input name="utf8" type="hidden" value="✓">
+                <input type="hidden" name="authenticity_token">
+                <legend class="azul">Dados de acesso</legend>
+                <div class="form-group">
+                    <label class="form-group__item" for="name">Nome</label>
+                    <div class="type-items">
+                        <input class="string optional " placeholder="Ex: Gabriel Soares" autofocus="autofocus" type="text" name="name" id="name">
+                    </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="form-group__item" for="email">Email</label>
+                    <div class="type-items">
+                        <input class="string optional " placeholder="Ex: exemploemail@gmail.com" type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-group__item" for="password">Senha</label>
+                    <div class="type-items">
+                        <input activate="password" placeholder="Crie sua senha" class="password optional form-control" type="password" name="password" id="password">
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label class="form-group__item" for="cpf">CPF</label>
+                    <div class="type-items">
+                        <input activate="cpf" class="string optional cpf form-control" placeholder="Digite apenas números" type="text" name="cpf" id="cpf">
+                    </div> 
+                </div>
+                <legend class="azul">Dados pessoais</legend>
+                  <p class="address-wrapper text-center"><span></span><i class="glyphicon glyphicon-map-marker"></i><p data-address="address" id="address">Preencha o CEP e o número de sua residência!</p></p>
+
+                <div class="form-group">
+                    <label class="form-group__item" for="zipcode">CEP</label>
+                    <div class="type-items">
+                        <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas números" type="text" value="" name="zipcode" id="zipcode">
+                    </div>
+                </div>                        
+                <div class="form-group">
+                    <label class="form-group__item" for="adress">Endereço</label>
+                    <div class="type-items">
+                        <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas endereço " type="text" value="" name="adress" id="adress">
+                    </div>
+                </div>                        
+
+                <div class="form-group">
+                    <label class="form-group__item" for="neighbor">bairro</label>
+                    <div class="type-items">
+                        <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas o bairro" type="text" value="" name="neighbor" id="neighbor">
+                    </div>
+                </div>                        
+
+                <div class="form-group">
+                    <label class="form-group__item" for="uf">UF</label>
+                    <div class="type-items">
+                        <input activate="cep" class="string optional cep form-control" placeholder="Digite apenas sua UF" type="text" value="" name="uf" id="uf">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-group__item" for="number">Número</label>
+                    <div class="type-items">
+                        <input activate="number" data-address="number" placeholder="Ex: 148" class="string optional form-control" type="text" value="" name="number" id="housemaid_localization_attributes_number">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-group__item" for="phones_number">Celular</label>
+                    <div class="type-items">
+                        <input activate="mobile" placeholder="DDD + Telefone" class="string optional phone-group phone-mobile form-control" maxlength="15" value="" size="15" type="text" name="number" id="phones_number">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="type-items">
+                        <div class="checkbox inline">
+                            <input value="0" type="hidden" name="terms">
+                            <label class="boolean optional checkbox" for="housemaid_tos">
+                                <input class="boolean optional" type="checkbox" value="1" checked="checked" name="terms" id="housemaid_tos">Li e concordo com os Termos de Uso</label>
+                        </div>
+                    </div>
+                </div>  
+                <div class="form-group">
+                    <div class="type-items  ">
+                        <input type="submit" name="commit" value="Enviar" class="btn btn-primary azulbg">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <footer>

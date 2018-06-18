@@ -185,6 +185,7 @@ img {
 .banner {
     background: url(../img/Flying_Nanny_215.jpg) no-repeat fixed;
     background-size: cover;
+    background-position-y: 50px;
 }
 
 .title {
@@ -303,7 +304,7 @@ article:hover {
     padding-bottom: 25px ;
 }
 .text-intens:last-child {
-    padding-bottom: none;
+    padding-bottom: 0;
 }
 
 .text-intens h1 {
@@ -340,13 +341,6 @@ strong {
 	border: none;
 }
 
-.wrapper_articles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    z-index: 999999;
-}
 /* NEWSLETTER */
 
 .newsletter h2 {
@@ -480,6 +474,13 @@ a.up {
 /* SMALL DEVICES - TABLETS*/
 
 @media screen and (min-width: 768px) {
+    .wrapper_articles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 999999;
+    }
     .servico {
         width: 49%;
         float: left;
