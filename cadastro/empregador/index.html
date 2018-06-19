@@ -157,39 +157,8 @@
     </footer>
     <!-- JQUERY -->
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="../../js/script.js" type="text/javascript"></script> 
     <script>
-    $(".btn-menu").click(function() {
-        $(".menu-mask").show();
-        $(".menu").animate({
-            width: "toggle",
-        }, "linear", function() {
-            $(".menu").show();
-        });
-    });
-    $(".btn-close").click(function() {
-        $(".menu").animate({
-                width: "toggle",
-            },
-            "linear",
-            function() {
-                $(".menu").hide();
-                $(".menu-mask").hide();
-            });
-    });
-
-    $(".menu-mask").click(function() {
-        $(".menu").animate({
-            width: "toggle",
-        }, "linear", function() {
-            $(".menu").hide();
-            $(".menu-mask").hide();
-        })
-
-    });
-
-        var input = document.getElementById('file-avatar'),
-        fileName = document.getElementById('file-text');
-
         input.addEventListener('change', function(){
           fileName.textContent = this.value;
         });
