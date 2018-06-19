@@ -196,7 +196,6 @@ img {
 .banner {
     background: url(../img/Flying_Nanny_215.jpg) no-repeat fixed;
     background-size: cover;
-    background-position-y: 50px;
 }
 
 .title {
@@ -555,6 +554,7 @@ a.up {
         display: none;
     }
     .menu {
+        transform: translate(0%);
         width: auto;
         height: 56px;
         line-height: 56px;
@@ -562,6 +562,10 @@ a.up {
         background-color: transparent;
         display: block !important;
         position: static;
+    }
+
+    .menu-mask.active {
+        transform: translate(-100%);
     }
     .menu ul {
     	margin-top: 1em;
