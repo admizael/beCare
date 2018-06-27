@@ -78,48 +78,51 @@
                     09:00 até 16:00
                     </span>
                   </div>                  
-                  <div class="box-data-items-text">
-                    <strong>Salario:</strong><span>
-                     160 dia
-                    </span>
-                  </div>                  
+                                   
                 </div>
               </div>
             </div>
             <div class="box-user-login">
-               <h2 class="rosa">Babais disponiveis</h2>
+               <h2 class="rosa">Babás disponíveis</h2>
               <div class="wapper-box--user">
                 <div class="box-user-items">
                   <div class="box-user-item__information">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzL1cXeAUaLg7aiz_ArQpV3KPGdx-P1plOmsG9lF6JK4sKLtK3w">
+                    <img src="C:\Ambiente\beCare\img\mulher.jpg">
                     <div class="box-user-item__text">
-                      <h3>bruna</h3>
-                      <span>Rio de Janeiro</span>                
+                      <h3>Bruna</h3>
+                      Rio de Janeiro               
                     </div>
                   </div>
                   <div class="box-user-item__description">
                     <div class="box-user-item__description-text">
-                      <strong>Périodos que posso trabalhar:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                      </span>
+                      <strong>Périodos que posso trabalhar:<br></strong>
+                       Folguista/Por hora<br>
+                     Mensalista noturno<br>
+                     Meio período manhã<br>
+                     Meio período noite<br>
+                     Período noturno<br>
+                      
                     </div>                    
                     <div class="box-user-item__description-text">
-                      <strong>Crianças nessa faixa etária:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      <strong>Crianças nessa faixa etária:<br></strong>
+                      Recém nascido<br> 
+                      De 0 a 2 anos<br>
+                      De 2 a 5 anos<br>
+                      De 5 a 12 anos<br>
                   
-                      </span>
+                     
                     </div>                    
                     <div class="box-user-item__description-text">
-                      <strong>Experiencia Profissional:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      <strong>Experiência Profissional:<br></strong>
+                      5 a 10 anos
                   
-                      </span>
+                      
                     </div>                    
                     <div class="box-user-item__description-text">
-                      <strong>Disponibilidade:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      <strong>Disponibilidade: <br></strong>
+                      Início imediato
                   
-                      </span>
+                      
                     </div>
                   </div>
                   <button class="box-user-item__buttom rosabg">Solicitar</button>
@@ -129,35 +132,42 @@
               <div class="wapper-box--user">
                 <div class="box-user-items">
                   <div class="box-user-item__information">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzL1cXeAUaLg7aiz_ArQpV3KPGdx-P1plOmsG9lF6JK4sKLtK3w">
+                    <img src="C:\Ambiente\beCare\img\mulher2.jpg">
                     <div class="box-user-item__text">
-                      <h3>bruna</h3>
+                      <h3>Ana Paula</h3>
                       <span>Rio de Janeiro</span>                
                     </div>
                   </div>
                   <div class="box-user-item__description">
                     <div class="box-user-item__description-text">
-                      <strong>Périodos que posso trabalhar:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                      </span>
+                      <strong>Períodos que posso trabalhar:<br></strong>
+                     Folguista/Por hora<br>
+                     Mensalista diurno<br>
+                     Meio período manhã<br>
+                     Meio período tarde<br>
+                     Período noturno<br>
+                     
                     </div>                    
                     <div class="box-user-item__description-text">
-                      <strong>Crianças nessa faixa etária:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      <strong>Crianças nessa faixa etária:<br></strong>
+                     Recém nascido<br>
+                      De 0 a 2 anos <br>
+                      De 2 a 5 anos <br>
+                      De 5 a 12 anos <br>
                   
-                      </span>
+                      
                     </div>                    
                     <div class="box-user-item__description-text">
-                      <strong>Experiencia Profissional:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      <strong>Experiência Profissional:<br></strong>
+                     Início imediato
                   
-                      </span>
+                      
                     </div>                    
                     <div class="box-user-item__description-text">
-                      <strong>Disponibilidade:</strong><span>
-                     trud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      <strong>Disponibilidade:<br></strong>
+                     Início imediato
                   
-                      </span>
+                      
                     </div>
                   </div>
                   <button class="box-user-item__buttom rosabg">Solicitar</button>
@@ -198,7 +208,65 @@
         </footer>
         
         <!-- JQUERY --> 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="../../js/script.js" type="text/javascript"></script>      
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+        $(".btn-menu").click(function(){
+          $(".menu-mask").show();
+          $( ".menu" ).animate( {
+            width: "toggle",
+            }, "linear", function() {
+            $(".menu").show();
+          });
+        });        
+        $(".btn-close").click(function(){
+          $(".menu").animate( { 
+            width: "toggle",
+          }, 
+          "linear", function () {
+            $(".menu").hide();
+            $(".menu-mask").hide();
+          }); 
+        });
+
+        $(".menu-mask").click(function(){
+          $(".menu").animate( {
+            width: "toggle",
+          },"linear",function (){ 
+           $(".menu").hide();
+           $(".menu-mask").hide();
+        })
+           
+        });
+
+  /*$(window).scroll(function() {
+    
+    var scroll = $(window).scrollTop()
+    if (scroll >0) {
+      $('header').css({
+        "z-index": "99999",
+        "position": "fixed",
+        "top": "0",
+        "left": "0",
+        "background-color": "rgba(0, 0, 0, 0.87)"
+      });
+      $('.menu li a').css({
+        "color": "#fff"
+      });
+    }
+    else if (document.querySelector('.cotainer.set-bar').getBoundingClientRect().top < 0){
+      $('header').css({
+       "position": "relative",
+        "top": "",
+        "left": "",
+        "background-color": ""
+      });
+      $('.menu li a').css({
+        "color": "#222"
+      });
+    }
+  });*/
+
+
+        </script>      
     </body>
 </html>

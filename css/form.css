@@ -1,7 +1,6 @@
 .form-group {
     padding: 10px 0px;
 }
-
 .form-group span {
     display: block;
     text-align: left;
@@ -58,7 +57,7 @@ label.checkbox_buttons_label {
 }
 
 legend {
-	font-family: "Leckerli One", Arial, Tahoma, sans-serif;
+	 font-family: "Leckerli One", Arial, Tahoma, sans-serif;
     width: 100%;
     font-size: 23px;
     margin-top: 10px;
@@ -109,7 +108,7 @@ input.btn.btn-primary.azulbg {
 }
 
 .title_form h1 {
-	font-family: "Leckerli One", Arial, Tahoma, sans-serif;
+	 font-family: "Leckerli One", Arial, Tahoma, sans-serif;
     font-size: 26px;
     padding-bottom: 10px;
 }
@@ -215,6 +214,7 @@ select#family_jobs_attribut {
         text-align: left;
         background: #fff;
     }
+
 
     label.radio_buttons_l {
         padding: 0;
