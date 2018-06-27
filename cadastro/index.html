@@ -75,71 +75,35 @@
               <div class="box-footer rosa3">
               <div class="copy">  
               
-                <span>&copy; 2017  -  Copyright -  BeCare Now WebSite</span>
+                <span>&copy; 2018  -  Copyright -  BeCare Now WebSite</span>
                 
                </div>
             </div>
         </footer>
         
         <!-- JQUERY --> 
-        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>
-        $(".btn-menu").click(function(){
-          $(".menu-mask").show();
-          $( ".menu" ).animate( {
-            width: "toggle",
-            }, "linear", function() {
-            $(".menu").show();
+          function toggle() {
+            $(".menu-mask").toggleClass("active");
+            $(".menu").toggleClass("active");
+          }
+          
+          $(".btn-menu").click(function() {
+            toggle();
           });
-        });        
-        $(".btn-close").click(function(){
-          $(".menu").animate( { 
-            width: "toggle",
-          }, 
-          "linear", function () {
-            $(".menu").hide();
-            $(".menu-mask").hide();
+          
+          $(".btn-close").click(function() {
+            toggle();
           }); 
-        });
-
-        $(".menu-mask").click(function(){
-          $(".menu").animate( {
-            width: "toggle",
-          },"linear",function (){ 
-           $(".menu").hide();
-           $(".menu-mask").hide();
-        })
-           
-        });
-
-  /*$(window).scroll(function() {
-    
-    var scroll = $(window).scrollTop()
-    if (scroll >0) {
-      $('header').css({
-        "z-index": "99999",
-        "position": "fixed",
-        "top": "0",
-        "left": "0",
-        "background-color": "rgba(0, 0, 0, 0.87)"
-      });
-      $('.menu li a').css({
-        "color": "#fff"
-      });
-    }
-    else if (document.querySelector('.cotainer.set-bar').getBoundingClientRect().top < 0){
-      $('header').css({
-       "position": "relative",
-        "top": "",
-        "left": "",
-        "background-color": ""
-      });
-      $('.menu li a').css({
-        "color": "#222"
-      });
-    }
-  });*/
-
+                   
+          $(".menu-mask").click(function() {
+            toggle();
+          });          
+          
+          $(".menu ul li a").click(function() {
+            toggle();
+          }); 
 
         </script>      
     </body>

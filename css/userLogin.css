@@ -10,7 +10,6 @@
 
 .box-data-items h3 {
     font-size: 20px;
-    padding-bottom: 10px;
     font-weight: bolder;
 }
 
@@ -18,18 +17,45 @@
     text-align: left;
     padding: 10px 0px;
 }
+.box-data--itens-perfil {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    margin-bottom: 25px;
+}
+
+.box-data--itens-perfil-text {
+    flex-direction: row;
+    padding-left: 35px;
+}
 
 .box-data-items-text {
     padding-bottom: 5px;
 }
 
+.box-data-items-text h3 {
+    padding-bottom: 10px;
+}
+.wapper-box--user-information {
+    background: white;
+    padding: 25px;
+    width: 95%;
+    border-radius: 10px;
+    margin-top: 25px;
+}
 .box-user-items {
+    background: white;
     color: #130400;
     padding: 25px;
-	border-radius:  5px;
-	border: 1px solid #00000030;
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.12);
     margin-top: 25px;
+    transition:  box-shadow ease-in-out 100ms;
+}
+.box-user-items:hover {
+    box-shadow: 4px 5px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .box-user-items h3 {
     color: #f35a81;
@@ -74,9 +100,15 @@
 }
 
 @media screen and (min-width: 768px) {
+    .box-user-item__information img {
+        width: 140px;
+    }
+    .box-user-item__information {
+        justify-content: normal;
+    }
 	.box-user-login {
-     padding-top: 40px;
-     width: 50%;
-     float: left;
-	 }
+        padding-top: 40px;
+        width: 50%;
+        float: left;
+	}
  }

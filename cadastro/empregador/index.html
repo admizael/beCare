@@ -151,48 +151,33 @@
             </div>
             <div class="box-footer rosa3">
                 <div class="copy">
-                    <span>&copy; 2017  -  Copyright - BeCare Now WebSite</span>
+                    <span>&copy; 2018  -  Copyright - BeCare Now WebSite</span>
                 </div>
             </div>
     </footer>
     <!-- JQUERY -->
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
-    $(".btn-menu").click(function() {
-        $(".menu-mask").show();
-        $(".menu").animate({
-            width: "toggle",
-        }, "linear", function() {
-            $(".menu").show();
-        });
-    });
-    $(".btn-close").click(function() {
-        $(".menu").animate({
-                width: "toggle",
-            },
-            "linear",
-            function() {
-                $(".menu").hide();
-                $(".menu-mask").hide();
-            });
-    });
-
-    $(".menu-mask").click(function() {
-        $(".menu").animate({
-            width: "toggle",
-        }, "linear", function() {
-            $(".menu").hide();
-            $(".menu-mask").hide();
-        })
-
-    });
-
-        var input = document.getElementById('file-avatar'),
-        fileName = document.getElementById('file-text');
-
-        input.addEventListener('change', function(){
-          fileName.textContent = this.value;
-        });
+      function toggle() {
+        $(".menu-mask").toggleClass("active");
+        $(".menu").toggleClass("active");
+      }
+      
+      $(".btn-menu").click(function() {
+        toggle();
+      });
+      
+      $(".btn-close").click(function() {
+        toggle();
+      }); 
+               
+      $(".menu-mask").click(function() {
+        toggle();
+      });          
+      
+      $(".menu ul li a").click(function() {
+        toggle();
+      }); 
     </script>
 </body>
 
