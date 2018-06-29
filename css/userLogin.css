@@ -27,7 +27,7 @@
 
 .box-data--itens-perfil-text {
     flex-direction: row;
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 .box-data-items-text {
@@ -35,12 +35,15 @@
 }
 
 .box-data-items-text h3 {
+    padding-bottom: 1px;
+    font-weight: 500;
     padding-bottom: 10px;
+
 }
 .wapper-box--user-information {
     background: white;
     padding: 25px;
-    width: 95%;
+    width: 100%;
     border-radius: 10px;
     margin-top: 25px;
 }
@@ -99,7 +102,114 @@
     color: #f35a81;
 }
 
+.wapper-box--more-information {
+    display: none;
+    overflow: scroll;
+    background: white;
+    width:  100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    left:  0;
+    right:  0;
+    top: 0;
+    z-index: -1px;
+}
+.more-information-close{
+    content: "x";
+    font-size: 50px;
+    font-weight: 500;
+    color: #f35a81;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.wapper-box--more-information.active {
+    position: fixed;
+    display: block;
+    z-index: 2px;
+}
+
+.more-information-box-data-items {
+    text-align: left;
+    padding: 10px 0px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.wapper-box--more-information 
+.wapper-box--user-information {
+    width: 100%;
+    padding: 0px;
+    margin-top: 45px;
+}
+.wapper-box--more-information
+.wapper-box--user {
+    padding: 25px 10px;
+    height: 100%;
+}
+.box-contact {
+    border: 1px solid #00000017;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.box-contact h3, .box-contact span {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.box-contact h3 {
+    font-size: 18px;
+}
+
+.box-contact textarea {
+    border-radius: 10px;
+    background: #e8e8e8;
+    width: 100%;
+    margin-top: 10px;
+}
+.box-contact button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    color: #fff;
+    display: inherit;
+}
+
+.box-actions {
+    height: 350px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 25px 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.box-actions-wrapper {
+    display:  flex;
+    flex-direction:  column;
+}
+
+.box-actions span {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #313131a8;
+}
+
+.box-actions-wrapper a {
+    border:  1px solid;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+}
+
 @media screen and (min-width: 768px) {
+    .wapper-box--user-information {
+        width: 95%;
+    }
     .box-user-item__information img {
         width: 140px;
     }
@@ -111,4 +221,34 @@
         width: 50%;
         float: left;
 	}
+ }
+
+  @media screen and (min-width: 1024px) {
+    .box-data--itens-perfil-text {
+        padding-left: 35px;
+    }
+    .wapper-box--more-information
+    .wapper-box--user {
+        padding: 25px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wapper-box--more-information 
+    .wapper-box--user-information {
+        width: 65%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .box-actions {
+        height: 350px;
+        width: 30%;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 25px 30px;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+    .more-information-close{
+        right: 40px;
+        top: 5px;
+    }
  }
