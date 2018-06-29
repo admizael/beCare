@@ -549,6 +549,9 @@ a.up {
     .menu {
         transform: translate(0%);
     }
+    .menu-mask.active {
+        display: none;
+    }
 	.container {
 	    padding: 1% 4%;
 	}
