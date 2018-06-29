@@ -1,0 +1,67 @@
+.box-perfil .wapper-box--more-information {
+	display: block;
+	position: relative;
+	background: #f1f1f1;
+}
+
+.box-perfil 
+.wapper-box--more-information 
+.wapper-box--user-information,
+.box-actions {
+	margin: 0;
+	text-align: center;
+	background: #fff;
+	height: auto;
+}
+
+.box-perfil 
+.wapper-box--more-information 
+.box-actions .box-text {
+	margin-top: 40px;
+}
+
+.box-perfil 
+.wapper-box--more-information 
+.wapper-box--user-information,
+.box-actions .box-text h3 {
+  font-size:  20px;
+  font-weight: 500;
+  color: #0000008f;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.box-perfil
+.more-information-box-data-items {
+	border: 0;
+}
+
+.select-perfil {
+	position: relative;
+	margin-right: 4%;
+	clear: both;
+}
+select {
+	 color: #f35a81;
+   padding: 10px;
+}
+.select-perfil:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-135deg);
+    border-left: 2px solid #f35a81;
+    border-top: 2px solid #f35a81;
+    position: absolute;
+    right: 45px;
+    top: 15px;
+}
+
+@media screen and (min-width: 960px) {
+	.select-perfil:after {
+    right: 15px;
+    top: 18px;
+	}
+}
