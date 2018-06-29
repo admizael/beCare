@@ -90,6 +90,10 @@ img {
 .amarelo2 {
     background: #fdf3db;
 }
+
+.greybg {
+    background: grey;
+}
 /*=========== HELPERS ==========*/
 
 .radius {
